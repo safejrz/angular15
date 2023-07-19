@@ -9,7 +9,7 @@ import { EmpleadoComponent } from './empleado/empleado.component';
 import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { CocheComponent } from './coche/coche.component';
-import { PlantillasComponent } from './plantillas/plantillas.component';
+import { HttpClientModule } from '@angular/common/http';
 
 import { ConversorPipe } from './pipes/conversor.pipe';
 import { from } from 'rxjs';
@@ -22,14 +22,14 @@ import { from } from 'rxjs';
     HomeComponent,
     ContactoComponent,
     ConversorPipe,
-    CocheComponent,
-    PlantillasComponent
+    CocheComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
     // routing
   ],
   providers: [appRoutingProviders],
