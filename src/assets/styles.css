@@ -5,3 +5,8 @@
 .defaultFont{
     font-size:32px;
 }
+
+.activado{
+    font-weight: bold;
+    background:  yellow;
+}
